@@ -122,7 +122,7 @@ body {
 }
 
 .btn-outline {
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
     color: #fff;
 }
 .btn-outline:hover {
@@ -181,6 +181,8 @@ body {
 /*RESPONSIVO*/
 @media(max-width: 900px) {
     .hero-container{
+        width: 100%;
+        padding: 0 20px;
         flex-direction: column;
         text-align: center
     }
@@ -489,16 +491,20 @@ body {
     /*grid vira 1 coluna*/
     .projects-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
     }
     /*card mantém proporção mas ajusta leitura*/
     .project-card {
+        width: 100%;
         aspect-ratio:16/10; /*levemente mais alto no mobile*/
     }
     /*conteúdo interno*/
     .project-info {
         bottom: 16px;
         left: 16px;
+    }
+    .project-card img {
+        heigh: auto;
+        object-fit: cover;
     }
     .project-info h3 {
         font-size: 16px;
@@ -572,6 +578,17 @@ body {
 .step p {
     font-size: 20px;
     color: #a1a1aa;
+}
+.process::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    backgroudn: linear-gradient(to bottom,
+                                transparent,
+                                #7b2cff, transparent);
 }
 .process-steps::before {
     content: "";
