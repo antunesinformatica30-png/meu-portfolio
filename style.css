@@ -642,6 +642,23 @@ body {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+    .process-steps::before {
+        display: none;
+    }
+    .step {
+        position: relative;
+        padding-top: 30px;
+    }
+    .step::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 1px;
+        background: rgba(255,255,255,0.1);
+    }
     .process-header h2 {
         font-size: 26px;
     }
