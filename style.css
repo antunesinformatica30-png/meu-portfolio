@@ -227,6 +227,8 @@ body {
     .btn-outline {
         width: 100%;
     }
+    .btn-outline {
+        text-align: center;
 }
 
 .services {
