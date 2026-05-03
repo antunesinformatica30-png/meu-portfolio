@@ -533,7 +533,14 @@ body {
     }
     /*card mantém proporção mas ajusta leitura*/
     .project-card {
-        aspect-ratio:16/10; /*levemente mais alto no mobile*/
+        width: 100%;
+        overflow: hidden;
+    }
+    .project-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
     /*conteúdo interno*/
     .project-info {
