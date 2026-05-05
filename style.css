@@ -164,7 +164,7 @@ body {
 
 .features {
     display: flex;
-    align-items : center;
+    align-items: center;
     gap: 8px;
     color: #a1a1aa;
     font-size: 14px;
@@ -208,7 +208,7 @@ body {
 @media(max-width: 900px) {
     .hero-container{
         flex-direction: column;
-        text-align: center
+        text-align: center;
     }
 
     .hero-features {
