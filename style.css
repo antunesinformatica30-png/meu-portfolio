@@ -436,10 +436,9 @@ body {
 /*IMAGEM*/
 .project-card img {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    object-fit: contain;
-    object-position: top;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
     display: block;
     transition: 0.4s;
 }
